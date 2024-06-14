@@ -1,22 +1,12 @@
-const getSleepHours = day => {
-  if (day === 'Monday') {
-    return 8;
-  } else if (day === 'Tuesday') {
-    return 7;
-  } else if (day === 'Wednesday') {
-    return 8;
-  } else if (day === 'Thursday') {
-    return 8;
-  } else if (day === 'Friday') {
-    return 8;
-  } else if (day === 'Saturday') {
-    return 9;
-  } else if (day === 'Sunday') {
-    return 7;
-  } else {
-    return 'Invalid day';
-  }
-}
+const getSleepHours = day => 
+  day === 'Monday' ? 8 :
+  day === 'Tuesday' ? 7 :
+  day === 'Wednesday' ? 8 :
+  day === 'Thursday' ? 8 :
+  day === 'Friday' ? 8 :
+  day === 'Saturday' ? 9 :
+  day === 'Sunday' ? 7 :
+  'Invalid day';
 
 const getActualSleepHours = () => 
   getSleepHours('Monday') +
